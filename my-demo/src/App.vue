@@ -7,11 +7,11 @@
       </mt-header>
 		
 
-		<router-view class="pdt-40"></router-view>
+		<router-view class="pd"></router-view>
 
       <!-- 底部导航菜单 -->
       <nav class="mui-bar mui-bar-tab">
-			<router-link to="/" class="mui-tab-item mui-active" >
+			<router-link to="/home" class="mui-tab-item" >
 				<span class="mui-icon mui-icon-home"></span>
 				<span class="mui-tab-label">首页</span>
 			</router-link>
