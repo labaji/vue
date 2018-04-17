@@ -12,6 +12,7 @@ import Search from '../components/cart/Search.vue'
 
 //导入新闻组件
 import NewList from '../components/new/list.vue'
+import NewInfo from '../components/new/info.vue'
 
 
 const router = new VueRouter({
@@ -23,7 +24,8 @@ const router = new VueRouter({
     {path:'/search',component:Search},
 
     //导入新闻模块
-    {path:'/home/news',component:NewList},
+    {path:'/home/newslist',component:NewList},
+    {path:'/home/newsinfo/:id',component:NewInfo},
 
   ],
    //修改默认高亮类名
