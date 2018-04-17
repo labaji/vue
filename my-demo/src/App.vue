@@ -36,7 +36,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style >
 .pd {
     padding: 40px 0 50px 0;
 }

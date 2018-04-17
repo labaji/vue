@@ -11,6 +11,24 @@
     </div>
 
     <!-- 评论组件 -->
+    <div class="comment">
+      <h3>发表评论</h3>
+      <textarea cols="30" rows="10" placeholder="请输入评论内容"></textarea>
+      <mt-button size="large" type="primary">发表评论</mt-button>
+      <ul class="comment-list">
+        <li class="comment-item">
+          <h5>
+            <span>第一楼</span>
+            <span>用户:匿名用户</span>
+            <span>发表时间:2018-1-1 12:12:12</span>
+          </h5>
+          <p>
+            沙发!!!
+          </p>
+        </li>
+      </ul>
+      <mt-button size="large" plain type="primary">加载更多</mt-button>
+    </div>
   </div>
 </template>
 
@@ -41,7 +59,7 @@ export default {
 
 <style lang="scss">
 .news-info {
-  padding: 5px;
+  padding: 45px  5px 55px 5px;
   .new-desc {
     display: flex;
     justify-content: space-between;
@@ -53,5 +71,32 @@ export default {
   .content {
     border-bottom: 1px solid #ccc;
   }
+
+
+}
+ .comment {
+   .comment-list{
+    h5{
+      display: flex;
+      justify-content:space-between;
+      height: 24px;
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      background-color: #eee;
+      color: #000;
+    }
+
+    p {
+      padding: 5px 10px;
+      color: #000;
+    }
+   }
+
+}
+
+
+  img {
+  width: 100%;
 }
 </style>
