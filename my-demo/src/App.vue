@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- 顶部固定导航栏 -->
-      <mt-header fixed title="前端18期">
+      <mt-header fixed title="新闻咨询">
          <mt-button icon="back" slot="left">返回</mt-button>
          <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
