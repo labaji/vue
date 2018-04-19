@@ -15,6 +15,11 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+
+  //有利于开发期间定位错误信息
+  devtool:'eval-soure-map',
+
+  
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
