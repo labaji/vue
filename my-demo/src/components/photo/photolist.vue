@@ -18,8 +18,8 @@
       <li v-for="img in images" :key="img.id" class="img-list-item">
         <img v-lazy="img.img_url"> 
         <div>
-          <h2>{{img.seo_title}}</h2>
-          <p>{{img.seo_description}}</p>
+          <h2>{{img.title}}</h2>
+          <p>{{img.zhaiyao}}</p>
         </div>
       </li>
     </ul>
@@ -42,7 +42,7 @@ export default {
     return {
       list: [],
       images: [],
-      id:[]
+      id: []
     };
   },
   methods: {
@@ -52,7 +52,6 @@ export default {
         const data = res.data;
         if (data.status === 0) {
           this.list = data.message;
-          console.log(this.list);
         }
       });
     },
@@ -61,18 +60,15 @@ export default {
     getImages(id) {
       this.$http.get(`/api/getimages/${id}`).then(res => {
         const data = res.data;
-
         if (data.status === 0) {
           this.images = data.message;
-
-          console.log(this.images);
         }
       });
     },
 
     //获取分类列表id
-    getId(id){
-        this.getImages(id)
+    getId(id) {
+      this.getImages(id);
     }
   }
 };
