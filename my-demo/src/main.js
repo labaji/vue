@@ -9,12 +9,13 @@ import App from './App.vue'
 
 
 //导入mint-ui组件
-import { Header,Button,Swipe, SwipeItem  } from 'mint-ui';
+import { Header,Button,Swipe, SwipeItem ,Lazyload  } from 'mint-ui';
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Button.name, Button);
 Vue.component(Header.name, Header);
+Vue.use(Lazyload);
 
 //导入mui 
 import './lib/mui/css/mui.min.css'
