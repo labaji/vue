@@ -14,6 +14,9 @@ import Search from '../components/cart/Search.vue'
 import NewList from '../components/new/list.vue'
 import NewInfo from '../components/new/info.vue'
 
+//导入图片列表组件
+import PhotoList from '../components/photo/photolist.vue'
+
 
 const router = new VueRouter({
   routes:[
@@ -26,6 +29,9 @@ const router = new VueRouter({
     //导入新闻模块
     {path:'/home/newslist',component:NewList},
     {path:'/home/newsinfo/:id',component:NewInfo},
+
+    //导入图片列表模块
+    {path:'/home/photolist',component:PhotoList}
 
   ],
    //修改默认高亮类名

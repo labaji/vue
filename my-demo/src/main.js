@@ -25,7 +25,7 @@ import './assets/index.css'
 
 //导入路由模块
 import router from './router'
-asdasddasd
+
 
 //引入axios
 import axios from "axios";
